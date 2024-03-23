@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import bg from "./assets/video.mp4";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='gridPage'>
+      <video height={"768px"} width={"1024px"} autoPlay muted loop className='video'>
+        <source src={bg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
